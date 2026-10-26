@@ -1,0 +1,13 @@
+services:
+  httpd1:
+    image: httpd:2.4
+    ports: ["8081:80"]
+    volumes: ["./test_files:/usr/local/apache2/htdocs:ro"]
+  httpd2:
+    image: httpd:2.4
+    ports: ["8082:80"]
+    volumes: ["./test_files:/usr/local/apache2/htdocs:ro"]
+  httpd3:
+    image: httpd:2.4
+    ports: ["8083:80"]
+    volumes: ["./test_files:/usr/local/apache2/htdocs:ro"]
